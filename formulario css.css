@@ -1,0 +1,61 @@
+*{
+    margin: 0cm;
+    padding: 0cm;
+}
+#titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(17, 128, 219);
+    margin-left: 7%;
+}
+#subtitulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aquamarine;
+    margin-left: 15%;
+}
+fieldset{
+    margin: 0cm;
+}
+body{
+    background-color: rgb(60, 4, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    color:rgb(180, 10, 95);
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 2%;
+    justify-content: center;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    display:block;
+}
+.para{
+    color: aquamarine;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid springgreen;
+    box-shadow: 2px 2px 2px indigo;
+    display: block; 
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus, .grupo input:focus{
+    background-color: gray;
+}
+.mid{
+    color: rgb(183, 21, 247);
+}
+.botao{
+    margin-bottom: 1em;
+    background-color: rgb(183, 21, 247);
+    color: honeydew;
+}
+.botao:hover{
+    background-color: rgb(226, 204, 3);
+    color: black;
+}
