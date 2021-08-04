@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="formulario css.css">
     <title>Cadastro</title>
 </head>
 <body>
     <div>
-        <h1> Curso de Japonês </h1>
-        <p> Faça sua inscrição! </p>
+        <h1 id="titulo"> Curso de Japonês </h1> <br>
+        <p id="subtitulo"> Faça sua inscrição! </p> <br>
+        <p class="para">Deseja fazer uma viagem ou assistir anime sem legenda? Não perca tempo!</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-            <label> Nome completo</label>   
-            <input type="text" name="nome" id="nome"> 
+            <label for="nome"> <strong> Nome completo </strong> </label> <br> <br>  
+            <input type="text" name="nome" id="nome" required> <br> <br>  
             </div>
         </fieldset>
         
-        <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email"
+        <div class="campo">
+            <label for="email"> <strong> Email </strong> </label>
+            <input type="email" name="email" id="email" required>
         </div>
 
-        <div>
-            <label>Qual a sua idade?</label>
-            <label>
+        <div class="campo">
+            <label>  <strong> Qual a sua idade? </strong>  </label>
+            <label class="mid">
                 <input type="radio" name="idade" value="menor de 18">Menor de 18
             </label>
-            <label>
+            <label class="mid">
                 <input type="radio" name="idade" value="maior de 18">Maior de 18          
             </label>
         </div>
 
-        <div>
-            <label>Nível de escolaridade</label>
+        <div class="campo">
+            <label for="escolaridade"> <strong> Nível de escolaridade </strong> </label>
              <select id="escolaridade">
                <option selected disabled value="">Selecione</option>
                <option>Ensino Fundamental Completo</option>
@@ -43,9 +45,9 @@
              </select>
         </div>
 
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-                <label>Quais idiomas você já é fluente?</label><br><br>
+                <label> <strong> Em quais idiomas você já é fluente? </strong> </label> <br><br>
                 <input type="checkbox" id="idioma1" name="idioma1" value="Inglês"
                 <label for="idioma1">Inglês</label>
                 <input type="checkbox" id="idioma2" name="idioma2" value="Espanhol"
@@ -60,13 +62,13 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
             <label>Alguma dúvida, reclamação ou comentário? Conte-nos aqui:</label>
             <textarea rows="10" style="width: 25em;" id="comentário" name="comentário"></textarea>
         </div>
 
-        <button type="submit"> Concluído </button>
+        <button class="botao" type="submit"> Concluído </button>
         
     </form>
 
