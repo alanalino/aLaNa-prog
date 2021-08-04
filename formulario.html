@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1> Curso de Japonês </h1>
+        <p> Faça sua inscrição! </p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+            <label> Nome completo</label>   
+            <input type="text" name="nome" id="nome"> 
+            </div>
+        </fieldset>
+        
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email"
+        </div>
+
+        <div>
+            <label>Qual a sua idade?</label>
+            <label>
+                <input type="radio" name="idade" value="menor de 18">Menor de 18
+            </label>
+            <label>
+                <input type="radio" name="idade" value="maior de 18">Maior de 18          
+            </label>
+        </div>
+
+        <div>
+            <label>Nível de escolaridade</label>
+             <select id="escolaridade">
+               <option selected disabled value="">Selecione</option>
+               <option>Ensino Fundamental Completo</option>
+               <option>Ensino Médio Completo</option>
+               <option>Ensino Superior</option>
+             </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Quais idiomas você já é fluente?</label><br><br>
+                <input type="checkbox" id="idioma1" name="idioma1" value="Inglês"
+                <label for="idioma1">Inglês</label>
+                <input type="checkbox" id="idioma2" name="idioma2" value="Espanhol"
+                <label for="idioma2">Espanhol</label>
+                <input type="checkbox" id="idioma3" name="idioma3" value="Português"
+                <label for="idioma3">Português</label>
+                <input type="checkbox" id="idioma4" name="idioma4" value="Francês"
+                <label for="idioma4">Francês</label>
+                <input type="checkbox" id="idioma5" name="idioma5" value="Outros"
+                <label for="idioma5">Outros</label>
+
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Alguma dúvida, reclamação ou comentário? Conte-nos aqui:</label>
+            <textarea rows="10" style="width: 25em;" id="comentário" name="comentário"></textarea>
+        </div>
+
+        <button type="submit"> Concluído </button>
+        
+    </form>
+
+    
+</body>
+</html>
